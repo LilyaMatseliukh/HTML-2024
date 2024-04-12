@@ -1,0 +1,21 @@
+body {
+    margin: 0;
+}
+.container {
+    background-color: #f3f3c4;
+    height: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.darkblue {
+    height: 100px;
+    width: 100px;
+    background-color: darkblue;
+    transition: 300ms;
+}
+.darkblue:hover {
+    border-radius: 50%;
+    background-color: darkgreen;
+    transition: 300ms;
+}

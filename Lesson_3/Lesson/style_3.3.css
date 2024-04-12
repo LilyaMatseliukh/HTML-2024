@@ -1,0 +1,22 @@
+html {
+    scroll-behavior: smooth;
+}
+* {
+    margin: 0;
+}
+.box-section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+}
+#pink {
+    background-color: pink;
+}
+#yellow {
+    background-color: yellow;
+}
+#green {
+    background-color: green;
+}

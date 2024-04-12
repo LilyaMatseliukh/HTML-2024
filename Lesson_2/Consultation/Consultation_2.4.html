@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .flex {
+            height: 300px;
+            background-color: honeydew;
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .red {
+            background-color: red;
+            /*order: 3;*/
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .blue {
+            background-color: blue;
+            order: 1;
+        }
+        .green {
+            background-color: green;
+            order: 2;
+        }
+        .size {
+            height: 200px;
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+<div class="flex">
+    <div class="red size"><p>lorem</p></div>
+    <div class="blue size"></div>
+    <div class="green size"></div>
+</div>
+</body>
+</html>
