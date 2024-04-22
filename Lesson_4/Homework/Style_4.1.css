@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=KoHo&display=swap');
+* {
+    margin: 0;
+}
+body {
+    font-family: "KoHo", sans-serif;
+    font-weight: 400;
+}
+/****************************************TOP***************************************/
+.top {
+    width: 100%;
+    height: 100vh;
+    background-image: url(image_1.png);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.top img {
+    width: 529px;
+    height: 393px;
+}
+.top div {
+    display: flex;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+.top div aside {
+    width: 529px;
+    height: 393px;
+    background-color: #FAF9F7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.top div aside h1 {
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 45px;
+    font-weight: 400;
+}
+.top div aside p {
+    font-size: 25px;
+}
+.top div aside button {
+    width: 409px;
+    height: 76px;
+    border-radius: 5px;
+    border: 1px solid rgba(156, 152, 152, 0.10);
+    background: rgba(217, 217, 217, 0.60);
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    font-family: "KoHo", sans-serif;
+    font-size: 30px;
+}
+/*******************************************CENTER*************************************/
+.center {
+    width: 100%;
+    height: 100vh;
+    background-image: url(image_3.png);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.center iframe {
+    width: 880px;
+    height: 380px;
+}
+.center article {
+    width: 880px;
+}
+.center article h1, p {
+    font-size: 33px;
+    font-weight: 400;
+}
+/***************************************BOTTOM**************************************/
+.bottom {
+    width: 100%;
+    height: 100vh;
+    background-image: url(image_4.png);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.bottom div {
+    width: 420px;
+    height: 550px;
+    background: rgba(83, 83, 83, 0.40);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.bottom div img {
+    width: 375px;
+    height: 200px;
+    margin-top: 20px;
+}
+.bottom div h1, p, span {
+    font-size: 32px;
+    font-weight: 400;
+}
+.bottom div button {
+    width: 390px;
+    height: 70px;
+    border-radius: 5px;
+    border: 1px solid rgba(156, 152, 152, 0.10);
+    background: rgba(217, 217, 217, 0.60);
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    color: #6B6666;
+    font-family: "KoHo", sans-serif;
+    font-size: 35px;
+    margin-bottom: 85px;
+}

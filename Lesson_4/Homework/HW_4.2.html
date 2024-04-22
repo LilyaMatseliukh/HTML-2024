@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Helvetica, sans-serif;
+        }
+        .container {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        section {
+            height: 570px;
+            width: 470px;
+            border: 2px solid lightgrey;
+            border-radius: 2px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+        img {
+            width: 200px;
+            margin: 60px 0;
+        }
+        form {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        input {
+            width: 70%;
+            height: 45px;
+            border: 2px solid lightgrey;
+            background-color: #f6f6f6;
+            border-radius: 3px;
+            padding: 0 15px;
+            margin-bottom: 10px;
+            text-overflow: ellipsis;
+            font-family: Helvetica, sans-serif;
+        }
+        input::placeholder {
+            font-size: 16px;
+            color: #737373;
+        }
+        button {
+            margin-top: 10px;
+            width: 76%;
+            height: 45px;
+            border: none;
+            border-radius: 12px;
+            background-color: #4cb5f9;
+            color: snow;
+            font-family: Helvetica, sans-serif;
+            font-size: 18px;
+            letter-spacing: 1px;
+            font-weight: 600;
+        }
+        h3 {
+            color: gray;
+            font-size: 18px;
+            margin-top: 25px;
+        }
+        section div {
+            height: 60px;
+            display: flex;
+            align-items: center;
+        }
+        section div img {
+            width: 30px;
+            margin-right: 5px;
+        }
+        section div h3 {
+            color: #115a9b;
+            font-size: 20px;
+        }
+        section p {
+            color: #115a9b;
+            font-size: 18px;
+        }
+        footer {
+            height: 80px;
+            width: 470px;
+            margin-top: 20px;
+            border: 2px solid lightgrey;
+            border-radius: 1px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        footer p {
+            font-size: 18px;
+        }
+        footer span {
+            color: #4cb5f9;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <section>
+            <img src="img.png" alt="instagram-logo">
+            <form>
+                <input type="text" name="username" placeholder="Номер телефону, ім'я користувача або електронна пошта">
+                <input type="password" name="password" placeholder="Пароль">
+                <button>Увійти</button>
+            </form>
+            <h3>АБО</h3>
+            <div>
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAADYUlEQVR4nO2ZzU4TURTHeYHSe2c6idG9r2BYu5GYYOnM9JMCYeXGxBWJaxcVsNAWKi2lgIDAyp1bwiPIA5jwYQyYGCRojBE95k5n2unMnZnOvQPpYk7y33T1+92cO+dMZ2AgrLDCCqsvKzK18zgyufs5MrkHg5O7enZgcMLIOz3bEB03smXKJkTzJG+1IC0bgMaMrOtZA5RrBeeanWRXtaBM4xRn68P+BSb2TiNtcJ/weX/w2AEeZxtaUHblxL9An8DjbAOEzAr4FggMfowfXmAX6A94gU3ACu4Ev+kBb4Cv65e1CTizAihVBaRWIKqUACllPRVAyaoFvq7Fv8BNwGcacC9fgxfrB3BweAxfvl3BxdUvLSdfL+Hw0zlE5QUbPKOAP3jUA/yD51twfH4JboUS8zZ4IV3jEQgAPteEu2PLcHT23RW+I9ANzyHgNqDM8Bsu8GuAMzWYXt2HXgolijZ4Ib3MIhAQfK6pXdj9j0c22LOLH/BwehuwPK+dPIHH2h3ohhdZBIKC1wTUCpxf/LQJPC1/ACFV7e75tB2eUSAYeJKoXILff65tAvenapZ+p8OLqTc8AnzwZDgRAVqJit4uXS1jgk+14NkF8sFslOTZ7nph0+7wYqrKIMCxlKHkknbqrSxANFGkC4zOARp9bcocCGrZBs8hwLbXOLWMV73cOgBRXbTBi0kmAfaljFVgvPAexOSSDZ78xiTgPl2t8KuePe9VQ8+aLWALfIxFgBWebJIsAtd//8EdtUiFjyUXGQR6hW+Dm14ByWqc6ExXcjlpheMzgOOz7QhykQrPIeAfnrbLEwm6wCz1wlrhYyqTgPeAssKb36DME5Y8It0Fqjr8EhU+plY4BDjhyXByF6h6wrML8MCb9hq3OyD2AB9TywwCAcGT1QC7CSQNcGd4ZoEg4Mleg+MOAk9e9QQvKQwCfv7y8NooSa/TSmgLGPAVKryklDgEOOHJU8ZdYNETnl0gAPiWwIyDQKEneElZYBBggO+8QXWvw44CI4We4DkEnKerM7wB3hlQQnxOu7CkZcipaxkpgEhayAZfssFLMpNAMPBOqwH95EtUeEmeZxe4DXhJcYdnEiBfRvoFXpKL/j9w4FR9GKfrpzcDX3aGl83gLXhptPjIt0BYYYUV1sBt1H9ja3+JK6NR4QAAAABJRU5ErkJggg==">
+                <h3>Увійти через Facebook</h3>
+            </div>
+            <p>Забули пароль?</p>
+        </section>
+        <footer>
+            <p>Не маєте облікового запису? <span>Зареєструйся</span></p>
+        </footer>
+    </div>
+</body>
+</html>
