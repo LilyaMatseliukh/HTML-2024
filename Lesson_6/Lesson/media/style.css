@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+}
+body {
+    font-size: 35px;
+}
+header {
+    height: 10vh;
+    background-color: lightblue;
+    font-size: 1em;
+}
+header p:nth-child(1) {
+    display: block;
+}
+header p:nth-child(2) {
+    display: none;
+}
+nav {
+    display: block;
+    height: 5vh;
+    background-color: navajowhite;
+}
+footer {
+    height: 15vh;
+    background-color: lightblue;
+}
+.flex {
+    display: flex;
+    height: 75vh;
+}
+section {
+    width: 33.34%;
+    height: 100%;
+    font-size: 0.7em;
+}
+.section-1 {
+    background-color: darkslateblue;
+}
+.section-2 {
+    background-color: deepskyblue;
+}
+.section-3 {
+    background-color: cadetblue;
+}
+header, footer, section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

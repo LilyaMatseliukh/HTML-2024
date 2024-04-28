@@ -1,0 +1,28 @@
+body {
+    margin: 0;
+    font-size: 30px;
+    color: #737373;
+}
+header, main, aside {
+    background-color: #97aebe;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5vh;
+    border-radius: 10px;
+}
+header {
+    height: 18.5vh;
+}
+div.flex {
+    display: flex;
+    height: 80vh;
+}
+main {
+    height: 100%;
+    width: 75%;
+}
+aside {
+    height: 100%;
+    width: 25%;
+}

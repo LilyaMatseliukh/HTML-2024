@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        /*p {*/
+        /*    color: cornflowerblue;*/
+        /*}*/
+        /*.box>div>p {*/
+        /*    color: crimson;*/
+        /*}*/
+        /*.box div p {*/
+        /*    color: crimson;*/
+        /*}*/
+        .box>.box-2>.box-3>p {
+            color: fuchsia;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <div class="box-2">
+            <p>Lorem ipsum dolor.</p>
+            <p>Eligendi, inventore, voluptates.</p>
+            <p>Aliquid, distinctio, veritatis.</p>
+            <p>Corporis, molestiae vel!</p>
+            <p>Magni, molestias, officiis.</p>
+            <div class="box-3">
+                <p>Lorem.</p>
+                <p>Lorem.</p>
+                <p>Lorem.</p>
+                <p>Lorem.</p>
+                <p>Lorem.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

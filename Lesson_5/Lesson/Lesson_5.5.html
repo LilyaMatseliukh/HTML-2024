@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div>p>span {
+            color: hotpink;
+        }
+        /*div p>span {*/
+        /*  color: hotpink;*/
+        /*}*/
+        body>p:nth-child(2) {
+            color: purple;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>Lorem ipsum dolor sit amet, <span>consectetur</span> adipisicing elit. Aliquam dolore iure magnam numquam obcaecati, omnis! A ad, consequuntur dicta molestiae, nihil, odio pariatur porro provident quibusdam rerum similique tempore velit!</p>
+        <span>lorem</span>
+        <span>lorem</span>
+        <span>lorem</span>
+    </div>
+    <p>Lorem ipsum dolor sit amet, <span>consectetur</span> adipisicing elit. Aliquam dolore iure magnam numquam obcaecati, omnis! A ad, consequuntur dicta molestiae, nihil, odio pariatur porro provident quibusdam rerum similique tempore velit!</p>
+    <p>Lorem ipsum dolor sit amet, <span>consectetur</span> adipisicing elit. Aliquam dolore iure magnam numquam obcaecati, omnis! A ad, consequuntur dicta molestiae, nihil, odio pariatur porro provident quibusdam rerum similique tempore velit!</p>
+</body>
+</html>

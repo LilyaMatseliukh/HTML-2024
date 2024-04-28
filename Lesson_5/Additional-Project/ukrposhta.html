@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300..800&family=Rubik:wght@300..900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+        }
+        .margin-0 {
+            margin: 0;
+        }
+        .Rubik-400 {
+            font-family: "Rubik", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+        }
+        .Rubik-700 {
+            font-family: "Rubik", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 700;
+            font-style: normal;
+        }
+        .OpenSans-400 {
+            font-family: "Open Sans", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+            font-variation-settings: "wdth" 100;
+        }
+
+        /**************************HEADER**************************/
+        header {
+            height: 15vh;
+            padding: 0 135px 0 135px;
+            display: flex;
+            flex-direction: column;
+            margin-top: 25px;
+        }
+        header>img {
+            width: 186px;
+            height: 50px;
+        }
+        header>nav>a {
+            color: #99A2AA;
+            font-size: 16px;
+            line-height: 60px;
+            margin-right: 30px;
+        }
+
+        /**************************MAIN**************************/
+        main {
+            height: 55vh;
+            padding: 0 135px 0 135px;
+            background: #FEC524;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+        }
+        main>div.main-text {
+            width: 40%;
+            display: flex;
+            flex-direction: column;
+            margin-top: 30px;
+        }
+        main>div.main-text>h2 {
+            width: 60%;
+            color: #FFF;
+            font-size: 44px;
+        }
+        main>div.main-text>p {
+            color: #0E2F4B;
+            line-height: 30px;
+            margin: 25px 0 60px 0;
+        }
+        main>div.main-text>form>input {
+            width: 100%;
+            padding: 30px;
+            border: none;
+            outline: none;
+            border-radius: 10px;
+            box-shadow: 0 3px 35px 0 rgba(95, 98, 102, 0.17);
+            box-sizing: border-box;
+        }
+        main>div.main-text>form>input::placeholder {
+            color: #757575;
+            font-size: 16px;
+            letter-spacing: 0.5px;
+        }
+        main>div.main-buttons {
+            display: flex;
+            width: 80%;
+            justify-content: space-between;
+            position: absolute;
+            bottom: -50px;
+        }
+        div.main-buttons>button {
+            width: 270px;
+            padding: 25px 24px;
+            border: none;
+            border-radius: 10px;
+            background: #FFF;
+            box-shadow: 0 3px 35px 0 rgba(95, 98, 102, 0.17);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        div.main-buttons>button>span {
+            color: #99A2AA;
+            font-size: 16px;
+            margin-left: 30px;
+        }
+
+        /**************************SECTION**************************/
+        section.services {
+            height: 90vh;
+            background: #F8F8F8;
+            padding: 0 135px 0 120px;
+            display: flex;
+            justify-content: space-between;
+            z-index: -1;
+        }
+        section.services>article {
+            width: 30%;
+            margin-top: 130px;
+        }
+        section.services>article>h2 {
+            width: 55%;
+            color: #0E2F4B;
+            font-size: 48px;
+            line-height: 60px;
+        }
+        section.services>article>p {
+            color: #0E2F4B;
+            line-height: 30px;
+        }
+        section.services>div.services-block {
+            width: 70%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin: 100px 0 0 30px;
+
+        }
+        div.services-block>div {
+            width: 38.5%;
+            /*padding-left: 30px;*/
+            /*box-sizing: border-box;*/
+        }
+        div.services-block>div>h3 {
+            width: 45%;
+            color: #0E2F4B;
+            font-size: 24px;
+            line-height: 32px;
+            margin: 0 0 13px 0;
+        }
+        div.services-block>div>span {
+            color: #0E2F4B;
+            font-size: 14px;
+            font-style: normal;
+            line-height: 20px;
+            margin-top: 13px;
+        }
+        div.services-block>div.background-map {
+            position: relative;
+            z-index: 1;
+        }
+        div.services-block>div.background-map>img {
+            position: absolute;
+            top: -70px;
+            right: 0;
+            z-index: -1;
+        }
+
+        /**************************SECTION**************************/
+        section.export-block {
+            height: 70vh;
+            background: #042C4B;
+            padding: 0 135px 0 135px;
+            display: flex;
+            align-items: center;
+        }
+        section.export-block>div {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
+        section.export-block>div>h2 {
+            color: #F8F8F8;
+            font-size: 48px;
+            line-height: 60px;
+            width: 60%;
+        }
+        section.export-block>div>p {
+            color: #99A2AA;
+            line-height: 30px;
+            width: 33%;
+            margin: 35px 0 45px 0;
+        }
+        section.export-block>div>button {
+            width: 305px;
+            height: 80px;
+            border: none;
+            border-radius: 10px;
+            background: #FDC13D;
+            color: #0E2F4B;
+            font-size: 20px;
+        }
+
+        /**************************SECTION**************************/
+        section.services-financial-block {
+            height: 80vh;
+            padding: 0 120px 0 120px;
+            margin-bottom: 200px;
+        }
+        section.services-financial-block>div.text-container {
+            border-radius: 10px;
+            background: #FDC13D;
+            padding: 50px 110px 40px 75px;
+            margin-top: 100px;
+        }
+       div.text-container>h3, div.finance-container>div>h3 {
+            color: #0E2F4B;
+            font-size: 24px;
+            line-height: 32px;
+        }
+        div.text-container>p {
+            color: #0E2F4B;
+            line-height: 30px;
+        }
+        div.text-container>span {
+            color: #0E2F4B;
+            line-height: 24px;
+        }
+        section.services-financial-block>h2 {
+            color: #0E2F4B;
+            font-size: 48px;
+            line-height: 60px;
+            margin-top: 120px;
+        }
+        section.services-financial-block>div.finance-container {
+            display: flex;
+        }
+        div.finance-container>div {
+            display: flex;
+            flex-direction: column;
+            margin-right: 150px;
+        }
+        div.finance-container>div>h3 {
+            width: 75%;
+            margin-bottom: 12px;
+        }
+        div.finance-container>div>span {
+            color: #0E2F4B;
+            font-size: 14px;
+            line-height: 20px;
+        }
+
+        /**************************SECTION**************************/
+        section.zip-code {
+            height: 65vh;
+            background: #042C4B;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        section.zip-code>div {
+            width: 75%;
+        }
+        section.zip-code>div>h2 {
+            color: #F8F8F8;
+            font-size: 48px;
+            line-height: 60px;
+        }
+        section.zip-code>div>p {
+            color: #99A2AA;
+            line-height: 30px;
+            margin: 30px 0 70px 0;
+        }
+        section.zip-code>div>form>input[type="text"] {
+            width: 505px;
+            padding: 0 30px;
+            height: 78px;
+            outline: none;
+            border-radius: 10px;
+            border: 1px solid #E8EBEE;
+        }
+        section.zip-code>div>form>input[type="text"]::placeholder {
+            color: #6C757D;
+            font-size: 16px;
+            letter-spacing: 0.5px;
+        }
+        section.zip-code>div>form {
+            display: flex;
+        }
+        section.zip-code>div>form>input[type="submit"] {
+            width: 248px;
+            height: 80px;
+            border-radius: 10px;
+            background: #FDC13D;
+            border: none;
+            outline: none;
+            color: #0E2F4B;
+            font-size: 20px;
+            display: block;
+            margin-left: 10px;
+        }
+
+        /**************************SECTION**************************/
+        section.news-block {
+            /*height: 130vh;*/
+            background: #F8F8F8;
+            padding: 100px 120px 80px 120px;
+            box-sizing: border-box;
+        }
+        section.news-block>h2 {
+            color: #0E2F4B;
+            font-size: 48px;
+            line-height: 60px;
+        }
+        section.news-block>div.div-container {
+            display: flex;
+            flex-wrap: wrap;
+            row-gap: 30px;
+            column-gap: 30px;
+            margin-bottom: 110px;
+            /*justify-content: space-between;*/
+        }
+        div.div-container>div.information {
+            width: 48.8%;
+            border-radius: 10px;
+            background: #FFF;
+            height: 32.5vh;
+            padding: 30px 30px 0 30px;
+            box-sizing: border-box;
+        }
+        div.information>p {
+            color: #0E2F4B;
+            line-height: 30px;
+            margin-bottom: 45px;
+        }
+        div.information>div.image-text-container {
+            display: flex;
+        }
+        div.image-text-container>img {
+            width: 100px;
+            height: 100px;
+        }
+        div.image-text-container>div.text {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            margin-left: 20px;
+        }
+        div.image-text-container>div.text>span {
+            color: #99A2AA;
+            font-size: 14px;
+            line-height: 24px;
+            margin-bottom: 10px;
+        }
+        div.image-text-container>div.text>h4 {
+            color: #0E2F4B;
+            font-size: 18px;
+            line-height: 24px;
+            width: 95%;
+        }
+        section.news-block>div.legal-container {
+            margin-top: 60px;
+            display: flex;
+            flex-wrap: wrap;
+            row-gap: 30px;
+            column-gap: 30px;
+        }
+        div.legal-container>div {
+            width: 31.75%;
+            height: 90px;
+            border-radius: 10px;
+            background: #FFF;
+            display: flex;
+            align-items: center;
+        }
+        div.legal-container>div>h6 {
+            margin: 0 0 0 40px;
+            color: #99A2AA;
+            font-size: 20px;
+        }
+
+        /**************************SECTION**************************/
+        section.branches {
+            /*height: 60vh;*/
+            background: #FEC524;
+            padding-left: 135px;
+            display: flex;
+        }
+        section.branches>aside {
+            display: flex;
+            flex-direction: column;
+            margin-top: 120px;
+        }
+        section.branches>aside>h2 {
+            color: #FFF;
+            font-size: 48px;
+            font-weight: 700;
+            line-height: 60px;
+        }
+        section.branches>aside>p {
+            color: #0E2F4B;
+            font-size: 16px;
+            line-height: 30px;
+            margin: 35px 0 25px 0;
+        }
+        section.branches>aside>h6 {
+            color: #0E2F4B;
+            font-size: 17px;
+            line-height: 30px;
+        }
+        section.branches>aside>div.images-1 {
+            display: flex;
+            margin: 15px 0 35px 0;
+        }
+        section.branches>aside>div.images-1 span {
+            color: #000;
+            font-size: 10px;
+            margin-left: 57px;
+        }
+        .images-1>div.google-play {
+            width: 170px;
+            height: 50px;
+            background-image: url(google-play.svg);
+            margin-right: 25px;
+        }
+        .images-1>div.app-store {
+            background-image: url(app-store.svg);
+            width: 170px;
+            height: 50px;
+        }
+        section.branches>aside>div.images-2 {
+            margin: 15px 0 40px 0;
+        }
+        .images-2>img {
+            margin-right: 20px;
+        }
+
+        /**************************FOOTER**************************/
+        footer {
+            /*height: 80vh;*/
+            background: #1D2023;
+            padding: 0 115px 0 120px;
+            display: flex;
+        }
+        footer>div.footer-list {
+            margin-top: 100px;
+            display: flex;
+            border-bottom: 1px solid #99A2AA;
+            padding-bottom: 50px;
+            margin-bottom: 100px;
+        }
+        div.footer-list>div {
+            display: flex;
+            flex-direction: column;
+            width: 21%;
+            margin-right: 40px;
+        }
+        div.footer-list>div>h6 {
+            color: #FFF;
+            font-size: 16px;
+            line-height: 20px;
+            margin: 0 0 23px 0;
+        }
+        div.footer-list>div>ol {
+            padding: 0;
+            list-style-type: none;
+        }
+        div.footer-list>div>ol>li {
+            color: #99A2AA;
+            line-height: 24px;
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="site-ua-logo.svg.svg">
+        <nav class="Rubik-400">
+            <a>Трекінг</a>
+            <a>Послуги</a>
+            <a>Тарифи</a>
+            <a>Відділення</a>
+            <a>Філателія</a>
+            <a>Кар’єра</a>
+            <a>Бізнесу</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="main-text">
+            <h2 class="Rubik-700 margin-0">Оформлюйте передплату!</h2>
+            <p class="OpenSans-400">Досхочу вибирайте й призи вигравайте</p>
+            <form>
+                <input type="number" name="tracking-number" placeholder="Введіть номер відправлення" class="Rubik-400">
+            </form>
+        </div>
+        <div class="main-buttons">
+            <button>
+                <img src="calculation.svg">
+                <span class="Rubik-700">Розрахувати</span>
+            </button>
+            <button>
+                <img src="package.svg">
+                <span class="Rubik-700">Оформити</span>
+            </button>
+            <button>
+                <img src="location.svg">
+                <span class="Rubik-700">Знайти індекс</span>
+            </button>
+            <button>
+                <img src="book.svg">
+                <span class="Rubik-700">Передплатити</span>
+            </button>
+        </div>
+    </main>
+
+    <section class="services">
+        <article>
+            <h2 class="Rubik-700" style="margin-top: 0">Поштові послуги</h2>
+            <p class="OpenSans-400">Замовляйте доставку у найвіддаленіші куточки України, відправляйте й отримуйте посилки з усього світу і навпаки.</p>
+            <p class="OpenSans-400">Виберіть доставку, яка найкраще підійде вам за термінами пересилання і вартістю.</p>
+        </article>
+        <div class="services-block Rubik-700">
+            <div>
+                <h3>Доставка по Україні</h3>
+                <span>Докладніше &#10095;</span>
+            </div>
+            <div>
+                <h3>Доставка документів</h3>
+                <span>Докладніше &#10095;</span>
+            </div>
+            <div>
+                <h3 style="width: 85%">Доставка з інтернет-магазинів</h3>
+                <span>Докладніше &#10095;</span>
+            </div>
+            <div>
+                <h3 style="width: 85%">Доставка ліків</h3>
+                <span>Докладніше &#10095;</span>
+            </div>
+            <div>
+                <h3>Доставка по світу</h3>
+                <span>Докладніше &#10095;</span>
+            </div>
+            <div class="background-map">
+                <h3>Доставка в Україну</h3>
+                <span>Докладніше &#10095;</span>
+                <img src="map.svg">
+            </div>
+        </div>
+    </section>
+
+    <section class="export-block">
+        <div>
+            <h2 class="Rubik-700 margin-0">Започаткуйте успішний міжнародний бізнес!</h2>
+            <p class="OpenSans-400">Продавайте товари за кордон через інтернет — нам довіряють 25 тисяч підприємців</p>
+            <button class="Rubik-700">Перейти</button>
+        </div>
+    </section>
+
+    <section class="services-financial-block">
+        <div class="text-container">
+            <h3 class="Rubik-700">Укрпошта надала благодійної та гуманітарної допомоги на понад 150 мільйонів гривень</h3>
+            <p class="OpenSans-400">У 2022 році, коли росія вдалася до повномасштабного вторгнення на територію нашої держави, Укрпошта, окрім основних…</p>
+            <span class="Rubik-700">Докладніше &#10095;</span>
+        </div>
+        <h2 class="Rubik-700">Фінансові послуги</h2>
+        <div class="finance-container Rubik-700">
+            <div>
+                <h3>Грошові перекази</h3>
+                <span>Докладніше &#10095;</span>
+            </div>
+            <div>
+                <h3>Міжнародні перекази</h3>
+                <span>Докладніше &#10095;</span>
+            </div>
+            <div>
+                <h3>Страхування</h3>
+                <span>Докладніше &#10095;</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="zip-code">
+        <div>
+            <h2 class="Rubik-700 margin-0">Знайти індекс</h2>
+            <p class="OpenSans-400">Поштовий індекс — це код із 5 цифр, який допомагає пришвидшити сортування та доставку відправлень. Поштовий індекс мають всі відділення Укрпошти та всі населені пункти України.</p>
+            <form>
+                <input type="text" name="district" placeholder="Введіть назву населеного пункту" class="Rubik-400">
+                <input type="submit" value="Знайти" class="Rubik-700">
+            </form>
+        </div>
+    </section>
+
+    <section class="news-block">
+        <h2 class="Rubik-700">Новини</h2>
+
+        <div class="div-container">
+            <div class="information">
+                <div class="image-text-container">
+                    <img src="news-1.png">
+                    <div class="text">
+                        <span class="OpenSans-400">06.11.2023</span>
+                        <h4 class="Rubik-700 margin-0">Відновлення історичної назви міста Звягель</h4>
+                    </div>
+                </div>
+                <p class="OpenSans-400">09 листопада п.р. відбудеться погашення</p>
+            </div>
+
+            <div class="information">
+                <div class="image-text-container">
+                    <img src="news-2.png">
+                    <div class="text">
+                        <span class="OpenSans-400">03.11.2023</span>
+                        <h4 class="Rubik-700 margin-0">У селі Архангельське на Херсонщині відкрили стаціонарне відділення Укрпошти</h4>
+                    </div>
+                </div>
+                <p class="OpenSans-400">Днями відновило свою роботу стаціонарне автоматизоване відділення Укрпошти в селищі Архангельське (74022)…</p>
+            </div>
+
+            <div class="information">
+                <div class="image-text-container">
+                    <img src="news-2.png">
+                    <div class="text">
+                        <span class="OpenSans-400">03.11.2023</span>
+                        <h4 class="Rubik-700 margin-0">Укрпошта в Японії: українські марки на філателістичній виставці JAPEX2023</h4>
+                    </div>
+                </div>
+                <p class="OpenSans-400" style="width: 90%;">Сьогодні відбулося урочисте відкриття Всеяпонської філателістичної виставки JAPEX2023 під загальною назвою…</p>
+            </div>
+
+            <div class="information">
+                <div class="image-text-container">
+                    <img src="news-1.png">
+                    <div class="text">
+                        <span class="OpenSans-400">03.11.2023</span>
+                        <h4 class="Rubik-700 margin-0">Півтора року співпраці Укрпошти та Укрзалізниці: перевезено ≈15 млн відправлень та виплачено ≈170 млн грн…</h4>
+                    </div>
+                </div>
+                <p class="OpenSans-400">В Укрпошти й Укрзалізниці спільною є не лише основа «укр», а й проєкти, що реалізуються для підтримки українців та України. …</p>
+            </div>
+        </div>
+
+        <h2 class="Rubik-700">Для юридичних осіб</h2>
+
+        <div class="legal-container Rubik-700">
+            <div>
+                <h6>Відправлення по Україні</h6>
+            </div>
+            <div>
+                <h6>Експорт</h6>
+            </div>
+            <div>
+                <h6>Програмне забезпечення</h6>
+            </div>
+            <div>
+                <h6>Укласти договір</h6>
+            </div>
+            <div>
+                <h6>Інтеграція API</h6>
+            </div>
+            <div>
+                <h6>Особистий кабінет</h6>
+            </div>
+        </div>
+    </section>
+
+    <section class="branches">
+        <aside>
+            <h2 class="Rubik-700 margin-0">Онлайн-сервіси Укрпошти</h2>
+            <p class="OpenSans-400">Оформлюй, відправляй та відстежуй “на ходу”</p>
+            <h6 class="Rubik-700 margin-0">Мобільний застосунок</h6>
+            <div class="images-1">
+                <div class="google-play">
+                    <span class="Rubik-700">Завантажити з</span>
+                </div>
+                <div class="app-store">
+                    <span class="Rubik-700">Завантажити з</span>
+                </div>
+            </div>
+            <h6 class="Rubik-700 margin-0">Чат-бот</h6>
+            <div class="images-2">
+                <img src="telegram.png">
+                <img src="viber.png">
+                <img src="facebook.png">
+            </div>
+        </aside>
+    </section>
+
+    <footer>
+        <div class="footer-list">
+            <div style="margin-right: 70px">
+                <h6 class="Rubik-700">Загальна інформація</h6>
+                <ol class="Rubik-400 margin-0">
+                    <li>Про Укрпошту</li>
+                    <li>Наглядова рада</li>
+                    <li>Керівництво</li>
+                    <li>Дирекції</li>
+                    <li>Публічна інформація</li>
+                    <li>Закупівлі</li>
+                    <li>Продаж і оренда нерухомості</li>
+                    <li>Протидія корупції</li>
+                    <li>Політика безпеки дорожнього руху</li>
+                    <li>Конфіденційність</li>
+                    <li>Новини</li>
+                    <li>Акції</li>
+                    <li>Контакт-центр</li>
+                </ol>
+            </div>
+            <div style="margin-right: 35px">
+                <h6 class="Rubik-700">Поштові послуги</h6>
+                <ol class="Rubik-400 margin-0">
+                    <li>Укрпошта Експрес</li>
+                    <li>Укрпошта Стандарт</li>
+                    <li>Укрпошта Документи</li>
+                    <li>Доставка по світу</li>
+                    <li>Доставка в Україну</li>
+                    <li>Великогабаритні або великовагові відправлення</li>
+                    <li>Кур’єрська доставка</li>
+                    <li>Розрахунок вартості</li>
+                </ol>
+            </div>
+            <div style="margin-right: 40px">
+                <h6 class="Rubik-700">Фінансові послуги</h6>
+                <ol class="Rubik-400 margin-0">
+                    <li>Переказ «З картки додому»</li>
+                    <li>Переказ «З картки до відділення»</li>
+                    <li>Переказ «З картки на картку»</li>
+                    <li>Міжнародні поштові перекази</li>
+                    <li>Внутрішні поштові перекази</li>
+                    <li>Платежі</li>
+                    <li>Страхові послуги</li>
+                    <li>Валютно-обмінні операції</li>
+                </ol>
+            </div>
+            <div>
+                <h6 class="Rubik-700">Інше</h6>
+                <ol class="Rubik-400 margin-0">
+                    <li>Онлайн-сервіси</li>
+                    <li>Онлайн-передплата</li>
+                    <li>Поштовий маркет</li>
+                    <li>Продукти «Власної марки»</li>
+                    <li>Періодичні видання</li>
+                    <li>Для видавців</li>
+                    <li>Посткросинг</li>
+                    <li>Секограма</li>
+                    <li>Знайти індекс</li>
+                    <li>Знайти адресу</li>
+                    <li>Знайти відділення</li>
+                    <li>Довідка</li>
+                    <li>API від Укрпошти</li>
+                </ol>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

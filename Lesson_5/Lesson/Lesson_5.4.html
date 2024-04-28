@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        /*
+        тег - 1б
+        клас - 10б
+        ід - 100б
+        вбудований стиль - 1000б
+        */
+
+        /*div.box div.box-text p.text {*/
+        /*    color: cornflowerblue;*/
+        /*}*/
+        /*div.box-text p.text {*/
+        /*    color: darkolivegreen;*/
+        /*}*/
+
+        /*div.box-text p.text {*/
+        /*  color: cornflowerblue;*/
+        /*}*/
+        /*p.text {*/
+        /*  color: darkolivegreen;*/
+        /*}*/
+        /*.box-text {*/
+        /*    color: crimson;*/
+        /*}*/
+        /*#red {*/
+        /*    color: red;*/
+        /*}*/
+        /*div #red {*/
+        /*    color: #da9090;*/
+        /*}*/
+        /*div.box-text #red {*/
+        /*    color: #1a005d;*/
+        /*}*/
+        /*p {*/
+        /*    color: cyan !important;*/
+        /*}*/
+
+        .box>.box-text>p {
+            color: #d3aab6;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="box-text">
+            <p class="text" id="red">Lorem ipsum dolor sit amet.</p>
+        </div>
+    </div>
+
+    <div class="box-2">
+        <div class="box-text-2">
+            <p class="text-2">Lorem ipsum dolor sit amet.</p>
+        </div>
+    </div>
+
+    <div class="box">
+        <p class="text-2">Lorem ipsum dolor sit amet.</p>
+    </div>
+</body>
+</html>

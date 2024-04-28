@@ -1,0 +1,28 @@
+@media screen and (max-width: 600px) {
+    div.flex {
+        flex-direction: column;
+    }
+    div.flex>div.left {
+        height: 70%;
+        width: 100%;
+    }
+    .article-1 {
+        width: 100%;
+        height: 65.5%;
+    }
+    div.articles-bottom {
+        width: 100%;
+        height: 30%;
+    }
+    .article-2, .article-3, .article-4 {
+        height: 100%;
+        width: 32.73%;
+    }
+    aside {
+        width: 100%;
+        height: 30%;
+    }
+    span {
+        font-size: 0.5em;
+    }
+}

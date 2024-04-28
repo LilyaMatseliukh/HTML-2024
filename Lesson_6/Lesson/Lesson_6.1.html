@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .grid>div {
+            border: 1px solid;
+        }
+        .grid {
+            height: 100vh;
+            display: grid;
+            /*grid-template-rows: 10vh 40vh 50vh;*/
+            grid-template-rows: 2fr 6fr 2fr;
+            grid-template-columns: 30% 40% 30%;
+            grid-gap: 5px;
+        }
+        .grid>div:nth-child(5) {
+            background-color: dimgray;
+            /*display: flex;*/
+            display: grid;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+  <div class="grid">
+      <div><span>1</span></div>
+      <div><span>2</span></div>
+      <div><span>3</span></div>
+      <div><span>4</span></div>
+      <div><span>5</span></div>
+      <div><span>6</span></div>
+      <div><span>7</span></div>
+      <div><span>8</span></div>
+      <div><span>9</span></div>
+  </div>
+</body>
+</html>

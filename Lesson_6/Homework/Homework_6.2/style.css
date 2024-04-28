@@ -1,0 +1,43 @@
+body {
+    margin: 0;
+    font-size: 30px;
+    color: #737373;
+}
+header, article, aside {
+    background-color: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5vh;
+    border-radius: 10px;
+    border: 1px solid;
+}
+header {
+    height: 20vh;
+}
+div.flex {
+    display: flex;
+    height: 77.5vh;
+}
+div.left {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+.article-1 {
+    height: 49.5%;
+    width: 99.35%;
+}
+div.articles-bottom {
+    display: flex;
+    height: 49.5%;
+    width: 100%;
+}
+.article-2, .article-3, .article-4 {
+    height: 100%;
+    width: 33.34%;
+}
+aside {
+    height: 100%;
+    width: 20%;
+}

@@ -1,0 +1,21 @@
+@media screen and (max-width: 600px) {
+    body {
+        font-size: 20px;
+    }
+    header p:nth-child(2) {
+        display: block;
+    }
+    header p:nth-child(1) {
+        display: none;
+    }
+    nav {
+        display: none;
+    }
+    .flex {
+        flex-direction: column;
+    }
+    section {
+        width: 100%;
+        height: 33.34%;
+    }
+}
